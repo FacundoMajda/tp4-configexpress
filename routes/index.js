@@ -10,7 +10,7 @@ const {
 // Ruta GET
 router.get("/", async (req, res) => {
   try {
-    const resultado = await getController(req);
+    const resultado = await getController(req, res);
     res.send(resultado);
     console.log("Éxito en la solicitud GET");
   } catch (error) {
@@ -22,7 +22,7 @@ router.get("/", async (req, res) => {
 // Ruta POST
 router.post("/", async (req, res) => {
   try {
-    const resultado = await postController(req);
+    const resultado = await postController(req, res);
     res.send(resultado);
     console.log("Éxito en la solicitud POST");
   } catch (error) {
@@ -34,7 +34,7 @@ router.post("/", async (req, res) => {
 // Ruta PUT
 router.put("/", async (req, res) => {
   try {
-    const resultado = await putController(req);
+    const resultado = await putController(req, res);
     res.send(resultado);
     console.log("Éxito en la solicitud PUT");
   } catch (error) {
@@ -46,7 +46,7 @@ router.put("/", async (req, res) => {
 // Ruta DELETE
 router.delete("/", async (req, res) => {
   try {
-    const resultado = await deleteController(req);
+    const resultado = await deleteController(req, res);
     res.send(resultado);
     console.log("Éxito en la solicitud DELETE");
   } catch (error) {
