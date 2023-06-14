@@ -1,24 +1,22 @@
 const express = require("express");
-
-const { Router } = require("express");
+const router = express.Router();
 const {
-  deleteTask,
-  getTasks,
-  getTasksById,
-  postTask,
-  putTask,
-} = require("../controllers/tasks.controller");
+  deleteController,
+  getController,
+  postController,
+  putController,
+} = require("../controllers/controllers.js");
 
 // Ruta GET
-router.get("/tasks", getTasks.get);
+router.get("/", getController.getController);
 
 // Ruta POST
-router.post("/tasks", postTask.post);
+router.post("/", postController.postController);
 
 // Ruta PUT
-router.put("/tasks", putTask.put);
+router.put("/", putController.putController);
 
 // Ruta DELETE
-router.delete("/", deleteTask.delete);
+router.delete("/", deleteController.deleteController);
 
 module.exports = router;
