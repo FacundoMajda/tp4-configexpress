@@ -1,10 +1,8 @@
 # tp4-configexpress
 tp4-facundo-majda
+
 ├── controllers
-│   └── getController.js
-│   └── postController.js
-│   └── putController.js
-│   └── deleteController.js
+│   └── controllers.js
 ├── routes
 │   └── index.js
 ├── models

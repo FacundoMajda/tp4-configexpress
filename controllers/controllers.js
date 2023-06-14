@@ -1,7 +1,7 @@
 // Controlador para la solicitud POST
 exports.postController = (req, res) => {
   try {
-    res.send("POST request");
+    res.status(200).send("POST request");
     console.log("Éxito en la solicitud POST");
   } catch (error) {
     console.error("Error en la solicitud POST:", error);
@@ -12,7 +12,7 @@ exports.postController = (req, res) => {
 // Controlador para la solicitud GET
 exports.getController = (req, res) => {
   try {
-    res.send("GET request");
+    res.status(200).send("GET request");
     console.log("Éxito en la solicitud GET");
   } catch (error) {
     console.error("Error en la solicitud GET:", error);
@@ -23,7 +23,7 @@ exports.getController = (req, res) => {
 // Controlador para la solicitud DELETE
 exports.deleteController = (req, res) => {
   try {
-    res.send("DELETE request");
+    res.status(200).send("DELETE request");
     console.log("Éxito en la solicitud DELETE");
   } catch (error) {
     console.error("Error en la solicitud DELETE:", error);
@@ -34,7 +34,7 @@ exports.deleteController = (req, res) => {
 // Controlador para la solicitud PUT
 exports.putController = (req, res) => {
   try {
-    res.send("PUT request");
+    res.status(200).send("PUT request");
     console.log("Éxito en la solicitud PUT");
   } catch (error) {
     console.error("Error en la solicitud PUT:", error);
