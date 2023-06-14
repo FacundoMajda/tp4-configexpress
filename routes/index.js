@@ -1,20 +1,24 @@
 const express = require("express");
-const router = express.Router();
-const getController = require("../controllers/getController");
-const postController = require("../controllers/postController");
-const putController = require("../controllers/putController");
-const deleteController = require("../controllers/deleteController");
+
+const { Router } = require("express");
+const {
+  deleteTask,
+  getTasks,
+  getTasksById,
+  postTask,
+  putTask,
+} = require("../controllers/tasks.controller");
 
 // Ruta GET
-router.get("/", getController.get);
+router.get("/tasks", getTasks.get);
 
 // Ruta POST
-router.post("/", postController.post);
+router.post("/tasks", postTask.post);
 
 // Ruta PUT
-router.put("/", putController.put);
+router.put("/tasks", putTask.put);
 
 // Ruta DELETE
-router.delete("/", deleteController.delete);
+router.delete("/", deleteTask.delete);
 
 module.exports = router;
