@@ -17,7 +17,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 // Configurar las rutas
-app.use("/", routes);
+app.use("/api", routes);
 
 // errores
 app.use((err, req, res, next) => {

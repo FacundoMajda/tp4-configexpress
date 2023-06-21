@@ -1,4 +1,4 @@
-// Controlador para la solicitud POST
+// Función para la solicitud POST
 exports.postController = (req, res) => {
   try {
     res.status(200).send("POST request");
@@ -9,7 +9,7 @@ exports.postController = (req, res) => {
   }
 };
 
-// Controlador para la solicitud GET
+// Función para la solicitud GET
 exports.getController = (req, res) => {
   try {
     res.status(200).send("GET request");
@@ -20,7 +20,7 @@ exports.getController = (req, res) => {
   }
 };
 
-// Controlador para la solicitud DELETE
+// Función para la solicitud DELETE
 exports.deleteController = (req, res) => {
   try {
     res.status(200).send("DELETE request");
@@ -31,7 +31,7 @@ exports.deleteController = (req, res) => {
   }
 };
 
-// Controlador para la solicitud PUT
+// Función para la solicitud PUT
 exports.putController = (req, res) => {
   try {
     res.status(200).send("PUT request");
